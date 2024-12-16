@@ -1,0 +1,79 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Contenedores de entrada y botones */
+.input-container, .button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.input-container button, .button-container button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    background: darkgreen;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container button:hover, .button-container button:hover {
+    background: darkgreen;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: darkgreen;
+    color: white;
+}
+
+.total-row td {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para la primera columna */
+#tablaJugadores td:first-child, #tablaJugadores th:first-child {
+    color: darkgreen; /* Cambia este valor al color que prefieras */
+    font-weight: bold;
+}

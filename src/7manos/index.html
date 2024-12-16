@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anotador en Tabla</title>
+  <link rel="stylesheet" href="sieteManos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Anotador de Puntos</h1>
+
+    <!-- Sección de Jugadores -->
+    <div class="input-container">
+      <input type="text" id="nombreJugador" placeholder="Nombre del jugador">
+      <button onclick="agregarJugador()">Añadir Jugador</button>
+    </div>
+
+    <!-- Botones de reinicio -->
+    <div class="button-container">
+      <button onclick="reiniciarTabla()">Reiniciar Tabla</button>
+      <button onclick="reiniciarPartida()">Reiniciar Partida</button>
+    </div>
+
+    <table id="tablaJugadores">
+      <thead>
+        <tr>
+          <th></th> <!-- Celda vacía en la cabecera -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2P</td></tr>
+        <tr><td>1P1E</td></tr>
+        <tr><td>2E</td></tr>
+        <tr><td>2P1E</td></tr>
+        <tr><td>3P</td></tr>
+        <tr><td>2E1P</td></tr>
+        <tr><td>3E</td></tr>
+      </tbody>
+      <tfoot>
+        <tr class="total-row">
+          <td>Total</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script src="sieteManos.js"></script>
+</body>
+</html>
