@@ -74,6 +74,51 @@ table th {
 
 /* Estilo para la primera columna */
 #tablaJugadores td:first-child, #tablaJugadores th:first-child {
-    color: darkgreen; /* Cambia este valor al color que prefieras */
+    color: darkgreen;
     font-weight: bold;
+}
+
+/* Puntos de quiebre */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-container, .button-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        gap: 5px;
+    }
+
+    .input-container input, .input-container button, .button-container button {
+        width: 100%; /* Botones e input ocupan todo el ancho */
+    }
+
+    table th, table td {
+        padding: 5px; /* Reduce el padding para tablas más compactas */
+        font-size: 14px; /* Reduce el tamaño de texto */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    table {
+        font-size: 12px; /* Fuente aún más pequeña en pantallas muy pequeñas */
+    }
+
+    .input-container input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .input-container button, .button-container button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
