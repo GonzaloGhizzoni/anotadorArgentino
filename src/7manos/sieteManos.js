@@ -145,3 +145,19 @@ function reiniciarPartida() {
 
 // Cargar los datos al iniciar la página
 document.addEventListener('DOMContentLoaded', cargarDatos);
+
+// Función para calcular los totales de las puntuaciones
+function calcularTotales() {
+    const tabla = document.getElementById('tablaJugadores');
+    const rows = tabla.querySelectorAll('tbody tr');
+    const totalRow = tabla.querySelector('tfoot .total-row');
+
+    for (let col = 1; col < totalRow.children.length; col++) {
+        let total = 0;
+        rows.forEach(row => {
+            const value = parseInt(row.children[col].textContent) || 0;
+            total += value;
+        });
+        totalRow.children[col].textContent = total;
+    }
+}
